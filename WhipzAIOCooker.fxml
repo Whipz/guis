@@ -4,7 +4,8 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="190.0" prefWidth="322.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scripts.core.skills.cooking.WhipzCookerGUIController">
+<AnchorPane prefHeight="190.0" prefWidth="322.0" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="scripts.core.skills.cooking.WhipzCookerGUIController">
    <children>
       <Button fx:id="startButton" layoutX="203.0" layoutY="151.0" mnemonicParsing="false" onAction="#startScriptPressed" prefHeight="25.0" prefWidth="93.0" text="Start" />
       <Label layoutX="27.0" layoutY="14.0" text="Whipz AIO Cooker" textFill="#fc0000">
