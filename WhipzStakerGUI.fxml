@@ -29,6 +29,6 @@
             <Font name="System Bold" size="12.0" />
          </font>
       </Label>
-      <TextField fx:id="textSstopLoss" layoutX="144.0" layoutY="171.0" prefHeight="25.0" prefWidth="123.0" text="eg.. 20m" />
+      <TextField fx:id="textStopLoss" layoutX="144.0" layoutY="171.0" prefHeight="25.0" prefWidth="123.0" text="eg.. 20m" />
    </children>
 </AnchorPane>
