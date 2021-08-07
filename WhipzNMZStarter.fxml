@@ -6,7 +6,7 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scripts.core.quests.WhipzNMZGUIController">
    <children>
-      <Label layoutX="182.0" layoutY="14.0" text="Whipz Quester Starter" textFill="RED">
+      <Label layoutX="182.0" layoutY="14.0" text="Whipz Quester" textFill="RED">
          <font>
             <Font name="System Bold" size="26.0" />
          </font>
