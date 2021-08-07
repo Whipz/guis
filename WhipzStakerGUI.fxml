@@ -10,6 +10,7 @@
          <Font name="System Bold" size="37.0" />
       </font>
    </Label>
+   <Button fx:id="currentTileButton" layoutX="14.0" layoutY="216.0" mnemonicParsing="false" onAction="#currentTileButtonPressed" prefHeight="32.0" prefWidth="100.0" text="Get Current Tile" />
    <Button fx:id="startButton" layoutX="190.0" layoutY="216.0" mnemonicParsing="false" onAction="#startButtonPressed" prefHeight="32.0" prefWidth="87.0" text="Start" />
    <Label layoutX="14.0" layoutY="79.0" text="Initial Stake Amount: " textFill="RED">
       <font>
@@ -29,5 +30,4 @@
       </font>
    </Label>
    <TextField fx:id="textStopLoss" layoutX="144.0" layoutY="171.0" prefHeight="25.0" prefWidth="123.0" text="eg.. 20m" />
-   <Button fx:id="currentTileButton" layoutX="14.0" layoutY="216.0" mnemonicParsing="false" onAction="#currentTileButtonPressed" prefHeight="32.0" prefWidth="100.0" text="Get Current Tile" />
 </AnchorPane>
