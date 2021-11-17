@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 <AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="213.0" prefWidth="294.0"
-            xmlns="http://javafx.com/javafx/11.0.1" fx:controller="scripts.core.cannonballs.WhipzCannonGUIController">
+            xmlns="http://javafx.com/javafx/11.0.1" fx:controller="scripts.WhipzCannonGUIController">
     <children>
         <Label layoutX="35.0" layoutY="14.0" text="Whipz CannonBaller" textFill="RED">
             <font>
