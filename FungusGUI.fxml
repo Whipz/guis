@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scripts.FungusGUI">
+   <children>
+      <Accordion prefHeight="354.0" prefWidth="600.0">
+        <panes>
+          <TitledPane animated="false" text="Quests">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="15.0" text="Food Type:" />
+                        <Label layoutX="14.0" layoutY="40.0" text="Use Staminas?" />
+                        <CheckBox fx:id="useStaminaCheckBox" layoutX="113.0" layoutY="40.0" mnemonicParsing="false" />
+                        <ListView fx:id="questList" layoutX="21.0" layoutY="75.0" prefHeight="162.0" prefWidth="200.0" />
+                        <ListView fx:id="questOrderList" layoutX="370.0" layoutY="75.0" prefHeight="162.0" prefWidth="200.0" />
+                        <Button fx:id="addQuestButton" layoutX="273.0" layoutY="120.0" mnemonicParsing="false" onAction="#addQuestButtonPressed" prefHeight="25.0" prefWidth="42.0" text="-&gt;" />
+                        <Button fx:id="removeQuestButton" layoutX="273.0" layoutY="163.0" mnemonicParsing="false" onAction="#removeQuestButtonPressed" prefHeight="25.0" prefWidth="43.0" text="&lt;-" />
+                        <Button fx:id="clearQuestButton" layoutX="273.0" layoutY="205.0" mnemonicParsing="false" onAction="#clearQuestButtonPressed" text="Clear" />
+                        <Label layoutX="202.0" layoutY="49.0" text="Quests (Order them how you want)" />
+                        <ComboBox fx:id="foodComboBox" layoutX="113.0" layoutY="11.0" prefWidth="150.0" />
+                     </children></AnchorPane>
+            </content>
+          </TitledPane>
+          <TitledPane animated="false" prefHeight="206.0" prefWidth="253.0" text="Prayer">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="14.0" text="Train prayer to: " />
+                        <TextField fx:id="trainPrayerText" layoutX="98.0" layoutY="10.0" prefHeight="25.0" prefWidth="117.0" text="50" />
+                        <Label layoutX="14.0" layoutY="50.0" text="How to train: " />
+                        <ComboBox fx:id="trainMethodComboBox" layoutX="98.0" layoutY="46.0" prefHeight="25.0" prefWidth="118.0" promptText="Chaos Altar" />
+                        <Label layoutX="14.0" layoutY="80.0" text="Bones: " />
+                        <ComboBox fx:id="bonesComboBox" layoutX="98.0" layoutY="76.0" prefHeight="25.0" prefWidth="120.0" promptText="Dragon bones" />
+                        <Label layoutX="14.0" layoutY="115.0" text="Buy price:" />
+                        <TextField fx:id="bonePriceText" layoutX="98.0" layoutY="111.0" prefHeight="25.0" prefWidth="121.0" text="1.05" />
+                     </children></AnchorPane>
+            </content>
+          </TitledPane>
+          <TitledPane animated="false" prefHeight="0.0" prefWidth="238.0" text="Mort Myre Fungus">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="14.0" text="Travel to Bank: " />
+                        <ComboBox fx:id="bankTravelComboBox" layoutX="111.0" layoutY="10.0" prefHeight="25.0" prefWidth="177.0" promptText="Ring of dueling" />
+                        <Label layoutX="14.0" layoutY="46.0" text="Travel to Fungus:" />
+                        <ComboBox fx:id="fungusTeleportComboBox" layoutX="111.0" layoutY="42.0" prefHeight="25.0" prefWidth="178.0" promptText="Salve graveyard teleport" />
+                        <Label layoutX="14.0" layoutY="81.0" text="Restore stats:" />
+                        <CheckBox fx:id="restoreStatsCheckBox" layoutX="111.0" layoutY="81.0" mnemonicParsing="false" />
+                        <Label layoutX="14.0" layoutY="110.0" text="Get Sickle (b):" />
+                        <CheckBox fx:id="getSickleCheckBox" layoutX="111.0" layoutY="110.0" mnemonicParsing="false" />
+                        <Label layoutX="14.0" layoutY="143.0" text="Equip Sickle:" />
+                        <CheckBox fx:id="equipSickleCheckBox" layoutX="111.0" layoutY="143.0" mnemonicParsing="false" />
+                        <Label layoutX="14.0" layoutY="176.0" text="Retrieve Death:" />
+                        <CheckBox fx:id="deathCheckBox" layoutX="111.0" layoutY="176.0" mnemonicParsing="false" />
+                     </children></AnchorPane>
+            </content>
+          </TitledPane>
+            <TitledPane animated="false" layoutX="10.0" layoutY="60.0" prefHeight="0.0" prefWidth="238.0" text="Restocking">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="14.0" text="Amount of Bank Teleports:" />
+                        <TextField fx:id="amountBankTeleportsText" layoutX="180.0" layoutY="10.0" prefHeight="25.0" prefWidth="39.0" text="20" />
+                        <Label layoutX="14.0" layoutY="46.0" text="Amount of Fungus Teleports:" />
+                        <TextField fx:id="amountFungusTeleportsText" layoutX="180.0" layoutY="42.0" prefHeight="25.0" prefWidth="40.0" text="20" />
+                        <Label layoutX="235.0" layoutY="14.0" text="Price:" />
+                        <Label layoutX="235.0" layoutY="46.0" text="Price:" />
+                        <TextField fx:id="priceBankTeleportsText" layoutX="279.0" layoutY="10.0" prefHeight="25.0" prefWidth="53.0" text="1.05" />
+                        <TextField fx:id="priceFungusTeleportsText" layoutX="279.0" layoutY="42.0" prefHeight="25.0" prefWidth="53.0" text="1.05" />
+                        <Label layoutX="14.0" layoutY="80.0" text="Price of Fungus:" />
+                        <TextField fx:id="priceFungusText" layoutX="106.0" layoutY="76.0" prefHeight="25.0" prefWidth="43.0" text="0.95" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </TitledPane>
+        </panes>
+      </Accordion>
+      <Button fx:id="saveProfileButton" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#saveProfileButtonPressed" text="Save Profile" />
+      <Button fx:id="loadProfileButton" layoutX="109.0" layoutY="361.0" mnemonicParsing="false" onAction="#loadProfileButtonPressed" text="Load Profile" />
+      <Button fx:id="startScriptButton" layoutX="534.0" layoutY="361.0" mnemonicParsing="false" onAction="#startButtonPressed" prefHeight="25.0" prefWidth="53.0" text="Start" />
+      <TextField fx:id="profileNameTextField" layoutX="216.0" layoutY="361.0" />
+   </children>
+</AnchorPane>
