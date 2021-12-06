@@ -7,101 +7,111 @@
     <Accordion prefHeight="354.0" prefWidth="614.0">
       <panes>
           <TitledPane animated="false" prefHeight="279.0" prefWidth="634.0" text="Quests">
-              <TabPane prefHeight="248.0" prefWidth="645.0" tabClosingPolicy="UNAVAILABLE">
-                  <Tab text="Restless Ghost">
-                      <CheckBox fx:id="restlessGhostStaminaCheckbox" layoutX="14.0" layoutY="55.0"
-                                mnemonicParsing="false" text="Stamina?"/>
-                      <CheckBox fx:id="restlessGhostTeleportCheckbox" layoutX="14.0" layoutY="84.0"
-                                mnemonicParsing="false" text="Teleports?"/>
-                      <CheckBox fx:id="restlessGhostRingCheckbox" layoutX="15.0" layoutY="110.0"
-                                mnemonicParsing="false" text="Equip Ring of Wealth?"/>
-                      <CheckBox fx:id="restlessGhostQuestCheckbox" layoutX="14.0" layoutY="26.0"
-                                mnemonicParsing="false" text="Complete Quest?"/>
-                  </Tab>
-                  <Tab text="Imp Catcher">
-                      <CheckBox fx:id="impCatcherStaminaCheckbox" layoutX="14.0" layoutY="55.0"
-                                mnemonicParsing="false" text="Stamina?"/>
-                      <CheckBox fx:id="impCatcherTeleportCheckbox" layoutX="14.0" layoutY="84.0"
-                                mnemonicParsing="false" text="Teleports?"/>
-                      <CheckBox fx:id="impCatcherRingCheckbox" layoutX="15.0" layoutY="110.0"
-                                mnemonicParsing="false" text="Equip Ring of Wealth?"/>
-                      <CheckBox fx:id="impCatcherQuestCheckbox" layoutX="14.0" layoutY="26.0"
-                                mnemonicParsing="false" text="Complete Quest?"/>
-                  </Tab>
-                  <Tab text="Witches Potion">
-                      <CheckBox fx:id="witchesPotionStaminaCheckbox" layoutX="14.0" layoutY="55.0"
-                                mnemonicParsing="false" text="Stamina?"/>
-                      <CheckBox fx:id="witchesPotionTeleportCheckbox" layoutX="14.0" layoutY="84.0"
-                                mnemonicParsing="false" text="Teleports?"/>
-                      <CheckBox fx:id="witchesPotionRingCheckbox" layoutX="15.0" layoutY="110.0"
-                                mnemonicParsing="false" text="Equip Ring of Wealth?"/>
-                      <CheckBox fx:id="witchesPotionQuestCheckbox" layoutX="14.0" layoutY="26.0"
-                                mnemonicParsing="false" text="Complete Quest?"/>
-                  </Tab>
-                  <Tab text="Witches House">
-                      <CheckBox fx:id="witchesHouseStaminaCheckbox" layoutX="14.0" layoutY="55.0"
-                                mnemonicParsing="false" text="Stamina?"/>
-                      <CheckBox fx:id="witchesHouseTeleportCheckbox" layoutX="14.0" layoutY="84.0"
-                                mnemonicParsing="false" text="Teleports?"/>
-                      <CheckBox fx:id="witchesHouseRingCheckbox" layoutX="15.0" layoutY="110.0"
-                                mnemonicParsing="false" text="Equip Ring of Wealth?"/>
-                      <CheckBox fx:id="witchesHouseQuestCheckbox" layoutX="14.0" layoutY="26.0"
-                                mnemonicParsing="false" text="Complete Quest?"/>
-                      <Label layoutX="15.0" layoutY="138.0" text="Food: "/>
-                      <ComboBox fx:id="witchesHouseFoodCombobox" layoutX="52.0" layoutY="134.0"
-                                prefWidth="150.0" promptText="Trout"/>
-                      <Label layoutX="14.0" layoutY="176.0" text="Spell: "/>
-                      <ComboBox fx:id="witchesHouseSpellCombobox" layoutX="52.0" layoutY="172.0"
-                                prefWidth="150.0" promptText="Earth Strike"/>
-                  </Tab>
-                  <Tab text="Waterfall Quest">
-                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="219.0" prefWidth="633.0">
-                          <CheckBox fx:id="waterfallStaminaCheckbox" layoutX="14.0" layoutY="55.0"
-                                    mnemonicParsing="false" text="Stamina?"/>
-                          <CheckBox fx:id="waterfallTeleportCheckbox" layoutX="14.0" layoutY="84.0"
-                                    mnemonicParsing="false" text="Teleports?"/>
-                          <CheckBox fx:id="waterfallRingCheckbox" layoutX="15.0" layoutY="110.0"
-                                    mnemonicParsing="false" text="Equip Ring of Wealth?"/>
-                          <CheckBox fx:id="waterfallQuestCheckbox" layoutX="14.0" layoutY="26.0"
-                                    mnemonicParsing="false" text="Complete Quest?"/>
-                          <Label layoutX="15.0" layoutY="138.0" text="Food: "/>
-                          <ComboBox fx:id="waterfallFoodCombobox" layoutX="52.0" layoutY="134.0"
-                                    prefWidth="150.0" promptText="Trout"/>
-                      </AnchorPane>
-                  </Tab>
-                  <Tab text="Priest in Peril">
-                      <CheckBox fx:id="priestStaminaCheckbox" layoutX="14.0" layoutY="55.0"
-                                mnemonicParsing="false" text="Stamina?"/>
-                      <CheckBox fx:id="priestTeleportCheckbox" layoutX="14.0" layoutY="84.0"
-                                mnemonicParsing="false" text="Teleports?"/>
-                      <CheckBox fx:id="priestRingCheckbox" layoutX="15.0" layoutY="110.0"
-                                mnemonicParsing="false" text="Equip Ring of Wealth?"/>
-                      <CheckBox fx:id="priestQuestCheckbox" layoutX="14.0" layoutY="26.0"
-                                mnemonicParsing="false" text="Complete Quest?"/>
-                      <Label layoutX="15.0" layoutY="138.0" text="Food: "/>
-                      <ComboBox fx:id="priestFoodCombobox" layoutX="71.0" layoutY="134.0"
-                                prefWidth="150.0" promptText="Trout"/>
-                      <Label layoutX="14.0" layoutY="176.0" text="Weapon:"/>
-                      <ComboBox fx:id="priestWeaponCombobox" layoutX="71.0" layoutY="172.0"
-                                prefWidth="150.0" promptText="Adamant scimitar"/>
-                  </Tab>
-                  <Tab text="Nature Spirit">
-                      <CheckBox fx:id="natureStaminaCheckbox" layoutX="14.0" layoutY="55.0"
-                                mnemonicParsing="false" text="Stamina?"/>
-                      <CheckBox fx:id="natureTeleportCheckbox" layoutX="14.0" layoutY="84.0"
-                                mnemonicParsing="false" text="Teleports?"/>
-                      <CheckBox fx:id="natureRingCheckbox" layoutX="15.0" layoutY="110.0"
-                                mnemonicParsing="false" text="Equip Ring of Wealth?"/>
-                      <CheckBox fx:id="natureQuestCheckbox" layoutX="14.0" layoutY="26.0"
-                                mnemonicParsing="false" text="Complete Quest?"/>
-                      <Label layoutX="15.0" layoutY="138.0" text="Food: "/>
-                      <ComboBox fx:id="natureFoodCombobox" layoutX="71.0" layoutY="134.0"
-                                prefWidth="150.0" promptText="Trout"/>
-                      <Label layoutX="14.0" layoutY="176.0" text="Weapon:"/>
-                      <ComboBox fx:id="natureWeaponCombobox" layoutX="71.0" layoutY="172.0"
-                                prefWidth="150.0" promptText="Adamant scimitar"/>
-                  </Tab>
-              </TabPane>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="598.0">
+               <children>
+                  <TabPane prefHeight="248.0" prefWidth="645.0" tabClosingPolicy="UNAVAILABLE">
+                    <tabs>
+                      <Tab text="Restless Ghost">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="219.0" prefWidth="596.0">
+                                 <children>
+                                    <CheckBox fx:id="restlessGhostStaminaCheckbox" layoutX="14.0" layoutY="55.0" mnemonicParsing="false" text="Stamina?" />
+                                    <CheckBox fx:id="restlessGhostTeleportCheckbox" layoutX="14.0" layoutY="84.0" mnemonicParsing="false" text="Teleports?" />
+                                    <CheckBox fx:id="restlessGhostRingCheckbox" layoutX="15.0" layoutY="110.0" mnemonicParsing="false" text="Equip Ring of Wealth?" />
+                                    <CheckBox fx:id="restlessGhostQuestCheckbox" layoutX="14.0" layoutY="26.0" mnemonicParsing="false" text="Complete Quest?" />
+                                 </children></AnchorPane>
+                        </content>
+                      </Tab>
+                        <Tab text="Imp Catcher">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="219.0" prefWidth="633.0">
+                                 <children>
+                                    <CheckBox fx:id="impCatcherStaminaCheckbox" layoutX="14.0" layoutY="55.0" mnemonicParsing="false" text="Stamina?" />
+                                    <CheckBox fx:id="impCatcherTeleportCheckbox" layoutX="14.0" layoutY="84.0" mnemonicParsing="false" text="Teleports?" />
+                                    <CheckBox fx:id="impCatcherRingCheckbox" layoutX="15.0" layoutY="110.0" mnemonicParsing="false" text="Equip Ring of Wealth?" />
+                                    <CheckBox fx:id="impCatcherQuestCheckbox" layoutX="14.0" layoutY="26.0" mnemonicParsing="false" text="Complete Quest?" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab text="Witches Potion">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="219.0" prefWidth="633.0">
+                                 <children>
+                                    <CheckBox fx:id="witchesPotionStaminaCheckbox" layoutX="14.0" layoutY="55.0" mnemonicParsing="false" text="Stamina?" />
+                                    <CheckBox fx:id="witchesPotionTeleportCheckbox" layoutX="14.0" layoutY="84.0" mnemonicParsing="false" text="Teleports?" />
+                                    <CheckBox fx:id="witchesPotionRingCheckbox" layoutX="15.0" layoutY="110.0" mnemonicParsing="false" text="Equip Ring of Wealth?" />
+                                    <CheckBox fx:id="witchesPotionQuestCheckbox" layoutX="14.0" layoutY="26.0" mnemonicParsing="false" text="Complete Quest?" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab text="Witches House">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="219.0" prefWidth="633.0">
+                                 <children>
+                                    <CheckBox fx:id="witchesHouseStaminaCheckbox" layoutX="14.0" layoutY="55.0" mnemonicParsing="false" text="Stamina?" />
+                                    <CheckBox fx:id="witchesHouseTeleportCheckbox" layoutX="14.0" layoutY="84.0" mnemonicParsing="false" text="Teleports?" />
+                                    <CheckBox fx:id="witchesHouseRingCheckbox" layoutX="15.0" layoutY="110.0" mnemonicParsing="false" text="Equip Ring of Wealth?" />
+                                    <CheckBox fx:id="witchesHouseQuestCheckbox" layoutX="14.0" layoutY="26.0" mnemonicParsing="false" text="Complete Quest?" />
+                                    <Label layoutX="15.0" layoutY="138.0" text="Food: " />
+                                    <ComboBox fx:id="witchesHouseFoodCombobox" layoutX="52.0" layoutY="134.0" prefWidth="150.0" promptText="Trout" />
+                                    <Label layoutX="14.0" layoutY="176.0" text="Spell: " />
+                                    <ComboBox fx:id="witchesHouseSpellCombobox" layoutX="52.0" layoutY="172.0" prefWidth="150.0" promptText="Earth Strike" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab text="Waterfall Quest">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="219.0" prefWidth="633.0">
+                                 <children>
+                                    <CheckBox fx:id="waterfallStaminaCheckbox" layoutX="14.0" layoutY="55.0" mnemonicParsing="false" text="Stamina?" />
+                                    <CheckBox fx:id="waterfallTeleportCheckbox" layoutX="14.0" layoutY="84.0" mnemonicParsing="false" text="Teleports?" />
+                                    <CheckBox fx:id="waterfallRingCheckbox" layoutX="15.0" layoutY="110.0" mnemonicParsing="false" text="Equip Ring of Wealth?" />
+                                    <CheckBox fx:id="waterfallQuestCheckbox" layoutX="14.0" layoutY="26.0" mnemonicParsing="false" text="Complete Quest?" />
+                                    <Label layoutX="15.0" layoutY="138.0" text="Food: " />
+                                    <ComboBox fx:id="waterfallFoodCombobox" layoutX="52.0" layoutY="134.0" prefWidth="150.0" promptText="Trout" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab text="Priest in Peril">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="219.0" prefWidth="633.0">
+                                 <children>
+                                    <CheckBox fx:id="priestStaminaCheckbox" layoutX="14.0" layoutY="55.0" mnemonicParsing="false" text="Stamina?" />
+                                    <CheckBox fx:id="priestTeleportCheckbox" layoutX="14.0" layoutY="84.0" mnemonicParsing="false" text="Teleports?" />
+                                    <CheckBox fx:id="priestRingCheckbox" layoutX="15.0" layoutY="110.0" mnemonicParsing="false" text="Equip Ring of Wealth?" />
+                                    <CheckBox fx:id="priestQuestCheckbox" layoutX="14.0" layoutY="26.0" mnemonicParsing="false" text="Complete Quest?" />
+                                    <Label layoutX="15.0" layoutY="138.0" text="Food: " />
+                                    <ComboBox fx:id="priestFoodCombobox" layoutX="71.0" layoutY="134.0" prefWidth="150.0" promptText="Trout" />
+                                    <Label layoutX="14.0" layoutY="176.0" text="Weapon:" />
+                                    <ComboBox fx:id="priestWeaponCombobox" layoutX="71.0" layoutY="172.0" prefWidth="150.0" promptText="Adamant scimitar" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab text="Nature Spirit">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="219.0" prefWidth="556.0">
+                                 <children>
+                                    <CheckBox fx:id="natureStaminaCheckbox" layoutX="14.0" layoutY="55.0" mnemonicParsing="false" text="Stamina?" />
+                                    <CheckBox fx:id="natureTeleportCheckbox" layoutX="14.0" layoutY="84.0" mnemonicParsing="false" text="Teleports?" />
+                                    <CheckBox fx:id="natureRingCheckbox" layoutX="15.0" layoutY="110.0" mnemonicParsing="false" text="Equip Ring of Wealth?" />
+                                    <CheckBox fx:id="natureQuestCheckbox" layoutX="14.0" layoutY="26.0" mnemonicParsing="false" text="Complete Quest?" />
+                                    <Label layoutX="15.0" layoutY="138.0" text="Food: " />
+                                    <ComboBox fx:id="natureFoodCombobox" layoutX="71.0" layoutY="134.0" prefWidth="150.0" promptText="Trout" />
+                                    <Label layoutX="14.0" layoutY="176.0" text="Weapon:" />
+                                    <ComboBox fx:id="natureWeaponCombobox" layoutX="71.0" layoutY="172.0" prefWidth="150.0" promptText="Adamant scimitar" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                    </tabs>
+                  </TabPane>
+               </children>
+              </AnchorPane>
           </TitledPane>
           <TitledPane animated="false" prefHeight="206.0" prefWidth="253.0" text="Prayer">
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
